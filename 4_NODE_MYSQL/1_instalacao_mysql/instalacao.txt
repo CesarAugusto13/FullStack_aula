@@ -1,0 +1,9 @@
+npm init
+npm install express nodemon express-handlebars mysql
+
+abrir package.json:
+
+"test": "echo \"Error: no test specified\" && exit 1",
+"start": "nodemon index.js localhost 3000"
+
+

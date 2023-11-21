@@ -1,0 +1,19 @@
+<Main> 
+    <h2> Home </h2>
+{{#each books}}
+    
+    <div class="book">
+        <h3> Título: {{this.title}}</h3>
+        <p> Quantidade de pàginas: {{this.pageqty}}</p>
+        <div class="buttons">
+            <a href="/book/{{this.idbooks}}" class="mais">Ver mais</a>
+            <a href="/edit/{{this.idbooks}}" class="editar">Editar</a>
+            <form action="/delete" method="POST">
+                <input type="hidden" name="id" value="{{this.idbooks}}">
+                <button class="excluir">Excluir</button>
+            </form>
+        </div>
+    </div>
+
+{{/each}}
+</Main>
